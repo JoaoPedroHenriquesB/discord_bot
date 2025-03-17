@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>jpdev</groupId>
+  <artifactId>Jpdv</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Jpdv</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+	<repositories>
+	    <repository>
+		<id>jitpack.io</id>
+		<url>https://jitpack.io</url>
+	    </repository>
+	</repositories>
+
+  <dependencies>
+  
+    <dependency>
+      <groupId>net.dv8tion</groupId>
+      <artifactId>JDA</artifactId>
+      <version>5.0.0-beta.20</version>
+    </dependency>
+    
+	<dependency>
+	    <groupId>com.github.FrostedCA</groupId>
+	    <artifactId>EasyCommands</artifactId>
+	    <version>0.8.13</version>
+	</dependency>
+   
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+<build>
+        <plugins>
+            <!-- Plugin para executar o programa com Maven -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <mainClass>botDiscord.Jaobot</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+  
+</project>
