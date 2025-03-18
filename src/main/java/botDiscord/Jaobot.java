@@ -49,7 +49,7 @@ public class Jaobot extends ListenerAdapter {
 
 		if (content.equalsIgnoreCase("!java")) {
 			channel.sendMessage(
-					"Eu vou bater o recorde de codar em java, vou ser o homen que mais coda em java no globo terrestre!")
+					"Eu vou bater o recorde de codar em java, vou ser o homem que mais coda em java no globo terrestre!")
 					.queue();
 		}
 
@@ -63,9 +63,9 @@ public class Jaobot extends ListenerAdapter {
 			CaraCoroa escolha = BotService.caraOuCoroa();
 
 			if (escolha == CaraCoroa.COROA) {
-				message.addReaction(Emoji.fromUnicode("U+1F451"));
+				message.addReaction(Emoji.fromUnicode("U+1F451")).queue();
 			} else {
-				message.addReaction(Emoji.fromFormatted("U+1F9D1"));
+				message.addReaction(Emoji.fromUnicode("U+1F9D1")).queue();
 			}
 		}
 

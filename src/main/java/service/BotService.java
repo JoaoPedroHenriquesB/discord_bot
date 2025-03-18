@@ -10,7 +10,8 @@ public class BotService {
 	}
 	
 	public static CaraCoroa caraOuCoroa() {
-		int random = new Random().nextInt(0, 1);
+		int random = new Random().nextInt(2);
+		System.out.println(random);
 		
 		return CaraCoroa.values()[random];
 	}
