@@ -37,7 +37,7 @@ public class Jaobot extends ListenerAdapter {
 		if (content.equalsIgnoreCase("!ping")) {
 			channel.sendMessage("Pong!").queue();
 		}
-
+		//a
 		if (content.equalsIgnoreCase("!treze")) {
 			channel.sendMessage("Esse treze é um Ganso mesmo.").queue();
 		}
